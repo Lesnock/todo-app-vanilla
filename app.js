@@ -1,9 +1,12 @@
 const typer = document.querySelector('.typer')
 const taskList = document.querySelector('.tasks')
+const debug = document.querySelector('span')
 
 getTasksFromSave()
 
 typer.addEventListener('keyup', event => {
+
+  debug.innerText = event.code
   if (event.code == 'Enter' || event.code == 'NumpadEnter') {
     add(event.target.value)
     cleanTyper()
