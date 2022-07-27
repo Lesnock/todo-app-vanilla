@@ -1,6 +1,7 @@
 const typer = document.querySelector('.typer')
 const taskList = document.querySelector('.tasks')
 const debug = document.querySelector('span')
+alert('Executou javascript')
 
 getTasksFromSave()
 
